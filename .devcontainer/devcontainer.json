@@ -1,0 +1,32 @@
+{
+  "name": "Visual Studio Code settings for AWS CDK",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { 
+      "VARIANT": "jammy",
+      "GOPROXY": "direct"
+    }
+  },
+  "settings": {
+    "go.toolsManagement.checkForUpdates": "local",
+    "go.useLanguageServer": true,
+    "go.goroot": "/usr/local/go",
+    "gopls": {
+      "build.experimentalWorkspaceModule": true
+    }
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "golang.Go"
+  ],
+  "postCreateCommand": "bash .devcontainer/post-create-command.sh",
+  "remoteUser": "vscode",
+  "features": {
+    "docker-in-docker": "latest",
+    "aws-cli": "latest",
+    "node": "16"
+  },
+  "containerEnv": {
+    "GOPROXY": "direct"
+  }
+}

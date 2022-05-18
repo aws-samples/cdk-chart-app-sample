@@ -1,0 +1,51 @@
+{
+  "name": "cdk-chart-app-sample",
+  "description": "A sample code implements simple web app with AWS CDK.",
+  "version": "1.0.1",
+  "license": "MIT-0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aws-samples/cdk-chart-app-sample.git"
+  },
+  "bin": {
+    "cdk-chart-app-sample": "bin/cdk-chart-app-sample.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "lint": "eslint --fix .",
+    "format": "prettier --write .",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "@aws-solutions-constructs/aws-cloudfront-s3": "^2.5.0",
+    "@types/aws-lambda": "^8.10.93",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^10.17.27",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "aws-cdk": "2.20.0",
+    "aws-cdk-lib": "2.20.0",
+    "constructs": "^10.0.0",
+    "esbuild": "^0.14.36",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-react": "^7.29.4",
+    "jest": "^26.4.2",
+    "prettier": "^2.6.2",
+    "source-map-support": "^0.5.16",
+    "standard-version": "^9.3.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.67.0",
+    "@aws-sdk/lib-dynamodb": "^3.67.0",
+    "luxon": "^2.3.1"
+  }
+}
