@@ -50,7 +50,7 @@ git push origin main
 ```sh
 npm ci
 cd webapp/dashboard
-npm ci
+npm ci && npm run build
 ```
 
 ### 3. Create AWS CodeStar connection
@@ -77,6 +77,14 @@ npx cdk deploy --all
 ```
 
 Once CDK Pipelines is created, changes to the CDK application will be reflected by `git push`. If you want to change the pipeline stack itself, you will need to run `cdk deploy` again from your terminal.
+
+### 6. Update `webapp/dashboard/.env`
+
+Replace the following value in `webapp/dashboard/.env` with your own. This is the time to change the value, as the specific value will not be known until the resource is created.
+
+```
+REACT_APP_API_BASE_URL=https://xxx.execute-api.ap-northeast-1.amazonaws.com/prod/
+```
 
 ## Useful commands
 
