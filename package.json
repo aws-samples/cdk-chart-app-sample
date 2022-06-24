@@ -1,7 +1,7 @@
 {
   "name": "cdk-chart-app-sample",
   "description": "A sample code implements simple web app with AWS CDK.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT-0",
   "private": true,
   "repository": {

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/aws-samples/cdk-chart-app-sample/compare/v1.0.1...v1.0.2) (2022-06-24)
+
+
+### Bug Fixes
+
+* Add webpack in devDependency to solve vulnerability of nth-check ([9ada7a4](https://github.com/aws-samples/cdk-chart-app-sample/commit/9ada7a42c5552879a079a7ddcf436dd73a28a2ef))
+
 ### [1.0.1](https://github.com/aws-samples/cdk-chart-app-sample/compare/v1.0.0...v1.0.1) (2022-05-13)
 
 
