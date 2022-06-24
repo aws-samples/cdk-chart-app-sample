@@ -3,24 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.1",
+    "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.4.1",
-    "@types/luxon": "^2.3.1",
-    "@types/node": "^16.11.27",
-    "@types/react": "^18.0.5",
-    "@types/react-dom": "^18.0.1",
+    "@types/jest": "^27.5.2",
+    "@types/luxon": "^2.3.2",
+    "@types/node": "^16.11.41",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "@types/url-join": "^4.0.1",
     "react-scripts": "5.0.1",
-    "typescript": "^4.6.3"
+    "typescript": "^4.7.4"
+  },
+  "overrides": {
+    "@svgr/webpack": "$@svgr/webpack"
   },
   "dependencies": {
-    "chart.js": "^3.7.1",
-    "luxon": "^2.3.1",
-    "react": "^18.0.0",
-    "react-chartjs-2": "^4.1.0",
-    "react-dom": "^18.0.0",
+    "chart.js": "^3.8.0",
+    "luxon": "^2.4.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^4.2.0",
+    "react-dom": "^18.2.0",
     "url-join": "^5.0.0",
     "web-vitals": "^2.1.4"
   },
